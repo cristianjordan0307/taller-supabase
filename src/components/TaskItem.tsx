@@ -125,3 +125,5 @@ export function TaskItem({ tarea, onActualizar, onEliminar }: Props) {
     </div>
   )
 }
+
+
