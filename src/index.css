@@ -1,0 +1,107 @@
+/* src/index.css o App.css */
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  /* Paleta de colores Morado y Blanco */
+  background-color: #f3f4f6; /* Gris muy claro de fondo para que resalte el blanco */
+  color: #1e293b;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  display: block; /* Quitamos el centrado forzado de texto */
+  text-align: left; /* Alineación natural para apps */
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: start;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: #f8fafc; /* Fondo suave */
+}
+
+/* Estilos para que los links y botones se vean morados y pro */
+a {
+  font-weight: 600;
+  color: #7c3aed; /* Morado vibrante */
+  text-decoration: inherit;
+  transition: color 0.2s;
+}
+
+a:hover {
+  color: #6d28d9; /* Morado más oscuro al pasar el mouse */
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #7c3aed; /* Fondo morado */
+  color: white;
+  cursor: pointer;
+  transition: all 0.25s;
+  box-shadow: 0 4px 6px -1px rgba(124, 58, 237, 0.2);
+}
+
+button:hover {
+  background-color: #6d28d9;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 15px -3px rgba(124, 58, 237, 0.3);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+/* Contenedores de tarjetas con bordes suaves */
+.card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #1e293b;
+  margin-top: 0;
+}
+
+/* Estilo para los inputs y textareas */
+input[type="text"], 
+textarea {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  box-sizing: border-box; /* Para que el padding no sople el ancho */
+}
+
+input[type="text"]:focus, 
+textarea:focus {
+  outline: none;
+  border-color: #7c3aed; /* Morado al hacer click */
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.1);
+}
+
+/* El botón ya tiene estilo por el paso anterior, pero aseguremos el ancho */
+.btn-full {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
