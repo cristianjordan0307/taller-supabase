@@ -8,10 +8,12 @@ interface Props {
 }
 
 export function TaskItem({ tarea, onActualizar, onEliminar }: Props) {
-  const [eliminando, setEliminando] = useState(false)
+  const [eliminando] = useState(false)
   const [editando, setEditando] = useState(false)
   const [nuevoTitulo, setNuevoTitulo] = useState(tarea.titulo)
   const inputRef = useRef<HTMLInputElement>(null)
+
+  
 
   // Foco automático al abrir el input
   useEffect(() => {
@@ -124,10 +126,4 @@ export function TaskItem({ tarea, onActualizar, onEliminar }: Props) {
       </div>
     </div>
   )
-<<<<<<< HEAD
 }
-
-
-=======
-}
->>>>>>> aa64b944bee9ee126439e5464bbaba562f4f252c
