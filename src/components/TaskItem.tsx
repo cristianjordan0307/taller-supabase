@@ -124,6 +124,10 @@ export function TaskItem({ tarea, onActualizar, onEliminar }: Props) {
       </div>
     </div>
   )
+<<<<<<< HEAD
 }
 
 
+=======
+}
+>>>>>>> aa64b944bee9ee126439e5464bbaba562f4f252c
